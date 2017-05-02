@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{65F522E3-7F34-4AB0-9CC4-E2BBAFED825D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReaderDemo1</RootNamespace>
+    <AssemblyName>ReaderDemo1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=7.7.2.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf, Version=8.9.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides, Version=8.3.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words, Version=10.5.0.0, Culture=neutral, PublicKeyToken=fa9a48344f15a022, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\index.css" />
+    <Content Include="imgs\aaa.pdf" />
+    <None Include="Properties\PublishProfiles\reader.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="imgs\aaa\aaa_1.jpeg" />
+    <Content Include="imgs\aaa\aaa_10.jpeg" />
+    <Content Include="imgs\aaa\aaa_100.jpeg" />
+    <Content Include="imgs\aaa\aaa_101.jpeg" />
+    <Content Include="imgs\aaa\aaa_102.jpeg" />
+    <Content Include="imgs\aaa\aaa_103.jpeg" />
+    <Content Include="imgs\aaa\aaa_104.jpeg" />
+    <Content Include="imgs\aaa\aaa_105.jpeg" />
+    <Content Include="imgs\aaa\aaa_106.jpeg" />
+    <Content Include="imgs\aaa\aaa_107.jpeg" />
+    <Content Include="imgs\aaa\aaa_108.jpeg" />
+    <Content Include="imgs\aaa\aaa_109.jpeg" />
+    <Content Include="imgs\aaa\aaa_11.jpeg" />
+    <Content Include="imgs\aaa\aaa_110.jpeg" />
+    <Content Include="imgs\aaa\aaa_111.jpeg" />
+    <Content Include="imgs\aaa\aaa_112.jpeg" />
+    <Content Include="imgs\aaa\aaa_113.jpeg" />
+    <Content Include="imgs\aaa\aaa_114.jpeg" />
+    <Content Include="imgs\aaa\aaa_115.jpeg" />
+    <Content Include="imgs\aaa\aaa_116.jpeg" />
+    <Content Include="imgs\aaa\aaa_117.jpeg" />
+    <Content Include="imgs\aaa\aaa_118.jpeg" />
+    <Content Include="imgs\aaa\aaa_119.jpeg" />
+    <Content Include="imgs\aaa\aaa_12.jpeg" />
+    <Content Include="imgs\aaa\aaa_120.jpeg" />
+    <Content Include="imgs\aaa\aaa_121.jpeg" />
+    <Content Include="imgs\aaa\aaa_122.jpeg" />
+    <Content Include="imgs\aaa\aaa_123.jpeg" />
+    <Content Include="imgs\aaa\aaa_124.jpeg" />
+    <Content Include="imgs\aaa\aaa_125.jpeg" />
+    <Content Include="imgs\aaa\aaa_126.jpeg" />
+    <Content Include="imgs\aaa\aaa_127.jpeg" />
+    <Content Include="imgs\aaa\aaa_128.jpeg" />
+    <Content Include="imgs\aaa\aaa_129.jpeg" />
+    <Content Include="imgs\aaa\aaa_13.jpeg" />
+    <Content Include="imgs\aaa\aaa_130.jpeg" />
+    <Content Include="imgs\aaa\aaa_131.jpeg" />
+    <Content Include="imgs\aaa\aaa_132.jpeg" />
+    <Content Include="imgs\aaa\aaa_133.jpeg" />
+    <Content Include="imgs\aaa\aaa_134.jpeg" />
+    <Content Include="imgs\aaa\aaa_135.jpeg" />
+    <Content Include="imgs\aaa\aaa_136.jpeg" />
+    <Content Include="imgs\aaa\aaa_137.jpeg" />
+    <Content Include="imgs\aaa\aaa_138.jpeg" />
+    <Content Include="imgs\aaa\aaa_139.jpeg" />
+    <Content Include="imgs\aaa\aaa_14.jpeg" />
+    <Content Include="imgs\aaa\aaa_140.jpeg" />
+    <Content Include="imgs\aaa\aaa_141.jpeg" />
+    <Content Include="imgs\aaa\aaa_142.jpeg" />
+    <Content Include="imgs\aaa\aaa_143.jpeg" />
+    <Content Include="imgs\aaa\aaa_144.jpeg" />
+    <Content Include="imgs\aaa\aaa_145.jpeg" />
+    <Content Include="imgs\aaa\aaa_146.jpeg" />
+    <Content Include="imgs\aaa\aaa_147.jpeg" />
+    <Content Include="imgs\aaa\aaa_148.jpeg" />
+    <Content Include="imgs\aaa\aaa_149.jpeg" />
+    <Content Include="imgs\aaa\aaa_15.jpeg" />
+    <Content Include="imgs\aaa\aaa_150.jpeg" />
+    <Content Include="imgs\aaa\aaa_151.jpeg" />
+    <Content Include="imgs\aaa\aaa_152.jpeg" />
+    <Content Include="imgs\aaa\aaa_153.jpeg" />
+    <Content Include="imgs\aaa\aaa_154.jpeg" />
+    <Content Include="imgs\aaa\aaa_155.jpeg" />
+    <Content Include="imgs\aaa\aaa_156.jpeg" />
+    <Content Include="imgs\aaa\aaa_157.jpeg" />
+    <Content Include="imgs\aaa\aaa_158.jpeg" />
+    <Content Include="imgs\aaa\aaa_159.jpeg" />
+    <Content Include="imgs\aaa\aaa_16.jpeg" />
+    <Content Include="imgs\aaa\aaa_160.jpeg" />
+    <Content Include="imgs\aaa\aaa_161.jpeg" />
+    <Content Include="imgs\aaa\aaa_162.jpeg" />
+    <Content Include="imgs\aaa\aaa_163.jpeg" />
+    <Content Include="imgs\aaa\aaa_164.jpeg" />
+    <Content Include="imgs\aaa\aaa_165.jpeg" />
+    <Content Include="imgs\aaa\aaa_166.jpeg" />
+    <Content Include="imgs\aaa\aaa_167.jpeg" />
+    <Content Include="imgs\aaa\aaa_168.jpeg" />
+    <Content Include="imgs\aaa\aaa_169.jpeg" />
+    <Content Include="imgs\aaa\aaa_17.jpeg" />
+    <Content Include="imgs\aaa\aaa_170.jpeg" />
+    <Content Include="imgs\aaa\aaa_171.jpeg" />
+    <Content Include="imgs\aaa\aaa_172.jpeg" />
+    <Content Include="imgs\aaa\aaa_173.jpeg" />
+    <Content Include="imgs\aaa\aaa_174.jpeg" />
+    <Content Include="imgs\aaa\aaa_175.jpeg" />
+    <Content Include="imgs\aaa\aaa_176.jpeg" />
+    <Content Include="imgs\aaa\aaa_177.jpeg" />
+    <Content Include="imgs\aaa\aaa_178.jpeg" />
+    <Content Include="imgs\aaa\aaa_179.jpeg" />
+    <Content Include="imgs\aaa\aaa_18.jpeg" />
+    <Content Include="imgs\aaa\aaa_180.jpeg" />
+    <Content Include="imgs\aaa\aaa_181.jpeg" />
+    <Content Include="imgs\aaa\aaa_182.jpeg" />
+    <Content Include="imgs\aaa\aaa_183.jpeg" />
+    <Content Include="imgs\aaa\aaa_184.jpeg" />
+    <Content Include="imgs\aaa\aaa_185.jpeg" />
+    <Content Include="imgs\aaa\aaa_186.jpeg" />
+    <Content Include="imgs\aaa\aaa_187.jpeg" />
+    <Content Include="imgs\aaa\aaa_188.jpeg" />
+    <Content Include="imgs\aaa\aaa_189.jpeg" />
+    <Content Include="imgs\aaa\aaa_19.jpeg" />
+    <Content Include="imgs\aaa\aaa_190.jpeg" />
+    <Content Include="imgs\aaa\aaa_191.jpeg" />
+    <Content Include="imgs\aaa\aaa_192.jpeg" />
+    <Content Include="imgs\aaa\aaa_193.jpeg" />
+    <Content Include="imgs\aaa\aaa_194.jpeg" />
+    <Content Include="imgs\aaa\aaa_195.jpeg" />
+    <Content Include="imgs\aaa\aaa_196.jpeg" />
+    <Content Include="imgs\aaa\aaa_197.jpeg" />
+    <Content Include="imgs\aaa\aaa_198.jpeg" />
+    <Content Include="imgs\aaa\aaa_199.jpeg" />
+    <Content Include="imgs\aaa\aaa_2.jpeg" />
+    <Content Include="imgs\aaa\aaa_20.jpeg" />
+    <Content Include="imgs\aaa\aaa_200.jpeg" />
+    <Content Include="imgs\aaa\aaa_201.jpeg" />
+    <Content Include="imgs\aaa\aaa_202.jpeg" />
+    <Content Include="imgs\aaa\aaa_203.jpeg" />
+    <Content Include="imgs\aaa\aaa_204.jpeg" />
+    <Content Include="imgs\aaa\aaa_205.jpeg" />
+    <Content Include="imgs\aaa\aaa_206.jpeg" />
+    <Content Include="imgs\aaa\aaa_207.jpeg" />
+    <Content Include="imgs\aaa\aaa_208.jpeg" />
+    <Content Include="imgs\aaa\aaa_209.jpeg" />
+    <Content Include="imgs\aaa\aaa_21.jpeg" />
+    <Content Include="imgs\aaa\aaa_210.jpeg" />
+    <Content Include="imgs\aaa\aaa_211.jpeg" />
+    <Content Include="imgs\aaa\aaa_212.jpeg" />
+    <Content Include="imgs\aaa\aaa_213.jpeg" />
+    <Content Include="imgs\aaa\aaa_214.jpeg" />
+    <Content Include="imgs\aaa\aaa_215.jpeg" />
+    <Content Include="imgs\aaa\aaa_216.jpeg" />
+    <Content Include="imgs\aaa\aaa_217.jpeg" />
+    <Content Include="imgs\aaa\aaa_218.jpeg" />
+    <Content Include="imgs\aaa\aaa_219.jpeg" />
+    <Content Include="imgs\aaa\aaa_22.jpeg" />
+    <Content Include="imgs\aaa\aaa_220.jpeg" />
+    <Content Include="imgs\aaa\aaa_221.jpeg" />
+    <Content Include="imgs\aaa\aaa_222.jpeg" />
+    <Content Include="imgs\aaa\aaa_223.jpeg" />
+    <Content Include="imgs\aaa\aaa_224.jpeg" />
+    <Content Include="imgs\aaa\aaa_225.jpeg" />
+    <Content Include="imgs\aaa\aaa_226.jpeg" />
+    <Content Include="imgs\aaa\aaa_227.jpeg" />
+    <Content Include="imgs\aaa\aaa_228.jpeg" />
+    <Content Include="imgs\aaa\aaa_229.jpeg" />
+    <Content Include="imgs\aaa\aaa_23.jpeg" />
+    <Content Include="imgs\aaa\aaa_230.jpeg" />
+    <Content Include="imgs\aaa\aaa_231.jpeg" />
+    <Content Include="imgs\aaa\aaa_232.jpeg" />
+    <Content Include="imgs\aaa\aaa_233.jpeg" />
+    <Content Include="imgs\aaa\aaa_234.jpeg" />
+    <Content Include="imgs\aaa\aaa_235.jpeg" />
+    <Content Include="imgs\aaa\aaa_236.jpeg" />
+    <Content Include="imgs\aaa\aaa_237.jpeg" />
+    <Content Include="imgs\aaa\aaa_238.jpeg" />
+    <Content Include="imgs\aaa\aaa_239.jpeg" />
+    <Content Include="imgs\aaa\aaa_24.jpeg" />
+    <Content Include="imgs\aaa\aaa_240.jpeg" />
+    <Content Include="imgs\aaa\aaa_241.jpeg" />
+    <Content Include="imgs\aaa\aaa_242.jpeg" />
+    <Content Include="imgs\aaa\aaa_243.jpeg" />
+    <Content Include="imgs\aaa\aaa_244.jpeg" />
+    <Content Include="imgs\aaa\aaa_245.jpeg" />
+    <Content Include="imgs\aaa\aaa_246.jpeg" />
+    <Content Include="imgs\aaa\aaa_247.jpeg" />
+    <Content Include="imgs\aaa\aaa_248.jpeg" />
+    <Content Include="imgs\aaa\aaa_249.jpeg" />
+    <Content Include="imgs\aaa\aaa_25.jpeg" />
+    <Content Include="imgs\aaa\aaa_250.jpeg" />
+    <Content Include="imgs\aaa\aaa_251.jpeg" />
+    <Content Include="imgs\aaa\aaa_252.jpeg" />
+    <Content Include="imgs\aaa\aaa_253.jpeg" />
+    <Content Include="imgs\aaa\aaa_254.jpeg" />
+    <Content Include="imgs\aaa\aaa_255.jpeg" />
+    <Content Include="imgs\aaa\aaa_256.jpeg" />
+    <Content Include="imgs\aaa\aaa_257.jpeg" />
+    <Content Include="imgs\aaa\aaa_258.jpeg" />
+    <Content Include="imgs\aaa\aaa_259.jpeg" />
+    <Content Include="imgs\aaa\aaa_26.jpeg" />
+    <Content Include="imgs\aaa\aaa_260.jpeg" />
+    <Content Include="imgs\aaa\aaa_261.jpeg" />
+    <Content Include="imgs\aaa\aaa_262.jpeg" />
+    <Content Include="imgs\aaa\aaa_263.jpeg" />
+    <Content Include="imgs\aaa\aaa_264.jpeg" />
+    <Content Include="imgs\aaa\aaa_265.jpeg" />
+    <Content Include="imgs\aaa\aaa_266.jpeg" />
+    <Content Include="imgs\aaa\aaa_267.jpeg" />
+    <Content Include="imgs\aaa\aaa_268.jpeg" />
+    <Content Include="imgs\aaa\aaa_269.jpeg" />
+    <Content Include="imgs\aaa\aaa_27.jpeg" />
+    <Content Include="imgs\aaa\aaa_270.jpeg" />
+    <Content Include="imgs\aaa\aaa_271.jpeg" />
+    <Content Include="imgs\aaa\aaa_272.jpeg" />
+    <Content Include="imgs\aaa\aaa_273.jpeg" />
+    <Content Include="imgs\aaa\aaa_274.jpeg" />
+    <Content Include="imgs\aaa\aaa_275.jpeg" />
+    <Content Include="imgs\aaa\aaa_276.jpeg" />
+    <Content Include="imgs\aaa\aaa_277.jpeg" />
+    <Content Include="imgs\aaa\aaa_278.jpeg" />
+    <Content Include="imgs\aaa\aaa_279.jpeg" />
+    <Content Include="imgs\aaa\aaa_28.jpeg" />
+    <Content Include="imgs\aaa\aaa_280.jpeg" />
+    <Content Include="imgs\aaa\aaa_281.jpeg" />
+    <Content Include="imgs\aaa\aaa_282.jpeg" />
+    <Content Include="imgs\aaa\aaa_283.jpeg" />
+    <Content Include="imgs\aaa\aaa_284.jpeg" />
+    <Content Include="imgs\aaa\aaa_285.jpeg" />
+    <Content Include="imgs\aaa\aaa_286.jpeg" />
+    <Content Include="imgs\aaa\aaa_287.jpeg" />
+    <Content Include="imgs\aaa\aaa_288.jpeg" />
+    <Content Include="imgs\aaa\aaa_289.jpeg" />
+    <Content Include="imgs\aaa\aaa_29.jpeg" />
+    <Content Include="imgs\aaa\aaa_290.jpeg" />
+    <Content Include="imgs\aaa\aaa_291.jpeg" />
+    <Content Include="imgs\aaa\aaa_292.jpeg" />
+    <Content Include="imgs\aaa\aaa_293.jpeg" />
+    <Content Include="imgs\aaa\aaa_294.jpeg" />
+    <Content Include="imgs\aaa\aaa_295.jpeg" />
+    <Content Include="imgs\aaa\aaa_296.jpeg" />
+    <Content Include="imgs\aaa\aaa_297.jpeg" />
+    <Content Include="imgs\aaa\aaa_298.jpeg" />
+    <Content Include="imgs\aaa\aaa_299.jpeg" />
+    <Content Include="imgs\aaa\aaa_3.jpeg" />
+    <Content Include="imgs\aaa\aaa_30.jpeg" />
+    <Content Include="imgs\aaa\aaa_300.jpeg" />
+    <Content Include="imgs\aaa\aaa_301.jpeg" />
+    <Content Include="imgs\aaa\aaa_302.jpeg" />
+    <Content Include="imgs\aaa\aaa_303.jpeg" />
+    <Content Include="imgs\aaa\aaa_304.jpeg" />
+    <Content Include="imgs\aaa\aaa_305.jpeg" />
+    <Content Include="imgs\aaa\aaa_306.jpeg" />
+    <Content Include="imgs\aaa\aaa_307.jpeg" />
+    <Content Include="imgs\aaa\aaa_308.jpeg" />
+    <Content Include="imgs\aaa\aaa_309.jpeg" />
+    <Content Include="imgs\aaa\aaa_31.jpeg" />
+    <Content Include="imgs\aaa\aaa_310.jpeg" />
+    <Content Include="imgs\aaa\aaa_311.jpeg" />
+    <Content Include="imgs\aaa\aaa_312.jpeg" />
+    <Content Include="imgs\aaa\aaa_313.jpeg" />
+    <Content Include="imgs\aaa\aaa_314.jpeg" />
+    <Content Include="imgs\aaa\aaa_315.jpeg" />
+    <Content Include="imgs\aaa\aaa_316.jpeg" />
+    <Content Include="imgs\aaa\aaa_317.jpeg" />
+    <Content Include="imgs\aaa\aaa_318.jpeg" />
+    <Content Include="imgs\aaa\aaa_319.jpeg" />
+    <Content Include="imgs\aaa\aaa_32.jpeg" />
+    <Content Include="imgs\aaa\aaa_320.jpeg" />
+    <Content Include="imgs\aaa\aaa_33.jpeg" />
+    <Content Include="imgs\aaa\aaa_34.jpeg" />
+    <Content Include="imgs\aaa\aaa_35.jpeg" />
+    <Content Include="imgs\aaa\aaa_356.jpeg" />
+    <Content Include="imgs\aaa\aaa_357.jpeg" />
+    <Content Include="imgs\aaa\aaa_358.jpeg" />
+    <Content Include="imgs\aaa\aaa_359.jpeg" />
+    <Content Include="imgs\aaa\aaa_36.jpeg" />
+    <Content Include="imgs\aaa\aaa_360.jpeg" />
+    <Content Include="imgs\aaa\aaa_37.jpeg" />
+    <Content Include="imgs\aaa\aaa_38.jpeg" />
+    <Content Include="imgs\aaa\aaa_39.jpeg" />
+    <Content Include="imgs\aaa\aaa_4.jpeg" />
+    <Content Include="imgs\aaa\aaa_40.jpeg" />
+    <Content Include="imgs\aaa\aaa_41.jpeg" />
+    <Content Include="imgs\aaa\aaa_42.jpeg" />
+    <Content Include="imgs\aaa\aaa_43.jpeg" />
+    <Content Include="imgs\aaa\aaa_44.jpeg" />
+    <Content Include="imgs\aaa\aaa_45.jpeg" />
+    <Content Include="imgs\aaa\aaa_46.jpeg" />
+    <Content Include="imgs\aaa\aaa_47.jpeg" />
+    <Content Include="imgs\aaa\aaa_48.jpeg" />
+    <Content Include="imgs\aaa\aaa_49.jpeg" />
+    <Content Include="imgs\aaa\aaa_5.jpeg" />
+    <Content Include="imgs\aaa\aaa_50.jpeg" />
+    <Content Include="imgs\aaa\aaa_51.jpeg" />
+    <Content Include="imgs\aaa\aaa_52.jpeg" />
+    <Content Include="imgs\aaa\aaa_53.jpeg" />
+    <Content Include="imgs\aaa\aaa_54.jpeg" />
+    <Content Include="imgs\aaa\aaa_55.jpeg" />
+    <Content Include="imgs\aaa\aaa_56.jpeg" />
+    <Content Include="imgs\aaa\aaa_57.jpeg" />
+    <Content Include="imgs\aaa\aaa_58.jpeg" />
+    <Content Include="imgs\aaa\aaa_59.jpeg" />
+    <Content Include="imgs\aaa\aaa_6.jpeg" />
+    <Content Include="imgs\aaa\aaa_60.jpeg" />
+    <Content Include="imgs\aaa\aaa_61.jpeg" />
+    <Content Include="imgs\aaa\aaa_62.jpeg" />
+    <Content Include="imgs\aaa\aaa_63.jpeg" />
+    <Content Include="imgs\aaa\aaa_64.jpeg" />
+    <Content Include="imgs\aaa\aaa_65.jpeg" />
+    <Content Include="imgs\aaa\aaa_66.jpeg" />
+    <Content Include="imgs\aaa\aaa_67.jpeg" />
+    <Content Include="imgs\aaa\aaa_68.jpeg" />
+    <Content Include="imgs\aaa\aaa_69.jpeg" />
+    <Content Include="imgs\aaa\aaa_7.jpeg" />
+    <Content Include="imgs\aaa\aaa_70.jpeg" />
+    <Content Include="imgs\aaa\aaa_71.jpeg" />
+    <Content Include="imgs\aaa\aaa_72.jpeg" />
+    <Content Include="imgs\aaa\aaa_73.jpeg" />
+    <Content Include="imgs\aaa\aaa_74.jpeg" />
+    <Content Include="imgs\aaa\aaa_75.jpeg" />
+    <Content Include="imgs\aaa\aaa_76.jpeg" />
+    <Content Include="imgs\aaa\aaa_77.jpeg" />
+    <Content Include="imgs\aaa\aaa_78.jpeg" />
+    <Content Include="imgs\aaa\aaa_79.jpeg" />
+    <Content Include="imgs\aaa\aaa_8.jpeg" />
+    <Content Include="imgs\aaa\aaa_80.jpeg" />
+    <Content Include="imgs\aaa\aaa_81.jpeg" />
+    <Content Include="imgs\aaa\aaa_82.jpeg" />
+    <Content Include="imgs\aaa\aaa_83.jpeg" />
+    <Content Include="imgs\aaa\aaa_84.jpeg" />
+    <Content Include="imgs\aaa\aaa_85.jpeg" />
+    <Content Include="imgs\aaa\aaa_86.jpeg" />
+    <Content Include="imgs\aaa\aaa_87.jpeg" />
+    <Content Include="imgs\aaa\aaa_88.jpeg" />
+    <Content Include="imgs\aaa\aaa_89.jpeg" />
+    <Content Include="imgs\aaa\aaa_9.jpeg" />
+    <Content Include="imgs\aaa\aaa_90.jpeg" />
+    <Content Include="imgs\aaa\aaa_91.jpeg" />
+    <Content Include="imgs\aaa\aaa_92.jpeg" />
+    <Content Include="imgs\aaa\aaa_93.jpeg" />
+    <Content Include="imgs\aaa\aaa_94.jpeg" />
+    <Content Include="imgs\aaa\aaa_95.jpeg" />
+    <Content Include="imgs\aaa\aaa_96.jpeg" />
+    <Content Include="imgs\aaa\aaa_97.jpeg" />
+    <Content Include="imgs\aaa\aaa_98.jpeg" />
+    <Content Include="imgs\aaa\aaa_99.jpeg" />
+    <Content Include="imgs\fangda.png" />
+    <Content Include="imgs\move.png" />
+    <Content Include="imgs\next.jpg" />
+    <Content Include="imgs\next.png" />
+    <Content Include="imgs\pre.jpg" />
+    <Content Include="imgs\pre.png" />
+    <Content Include="imgs\suoxiao.png" />
+    <Content Include="index.aspx" />
+    <Content Include="Jquery\jquery-1.10.2.min.js" />
+    <Content Include="Jquery\jquery.mCustomScrollbar.concat.min.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\AsposeFileToImg.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20764</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20764/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

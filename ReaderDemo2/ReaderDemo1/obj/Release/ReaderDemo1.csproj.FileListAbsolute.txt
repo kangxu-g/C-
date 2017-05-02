@@ -1,0 +1,12 @@
+E:\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.dll.config
+E:\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.dll
+E:\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.pdb
+E:\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.dll
+E:\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.pdb
+E:\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.csprojResolveAssemblyReference.cache
+F:\vs013\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.dll.config
+F:\vs013\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.dll
+F:\vs013\ReaderDemo1\ReaderDemo1\bin\ReaderDemo1.pdb
+F:\vs013\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.csprojResolveAssemblyReference.cache
+F:\vs013\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.dll
+F:\vs013\ReaderDemo1\ReaderDemo1\obj\Release\ReaderDemo1.pdb
