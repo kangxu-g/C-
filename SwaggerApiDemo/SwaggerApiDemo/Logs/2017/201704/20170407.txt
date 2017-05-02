@@ -1,0 +1,101 @@
+
+ 
+记录时间：2017-04-07 16:54:34,881 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'net_test' at line 1
+ 
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'net_test' at line 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   在 CommonLibs.Utilities.SqlHelper.ExecuteReader[T](CommandType cmdType, String cmdText, SqlParameter[] cmdPrams) 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Helper\SqlHelper.cs:行号 168
+
+ 
+记录时间：2017-04-07 16:54:34,995 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：[ExecuteReader] failure
+ 
+SwaggerApiDemo.Exceptions.HelperException: [ExecuteReader] failure
+   在 CommonLibs.Utilities.SqlHelper.ExecuteReader[T](CommandType cmdType, String cmdText, SqlParameter[] cmdPrams) 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Helper\SqlHelper.cs:行号 203
+   在 SwaggerApiDemo.Daos.Impl.SwaggerTestDaoImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Daos\Impl\SwaggerTestDaoImpl.cs:行号 23
+
+ 
+记录时间：2017-04-07 16:54:35,031 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：获取全部测试数据失败
+ 
+SwaggerApiDemo.Exceptions.DaoException: 获取全部测试数据失败
+   在 SwaggerApiDemo.Daos.Impl.SwaggerTestDaoImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Daos\Impl\SwaggerTestDaoImpl.cs:行号 28
+   在 SwaggerApiDemo.BLL.Impl.SwaggerTestBLLImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\BLL\Impl\SwaggerTestBLLImpl.cs:行号 29
+
+ 
+记录时间：2017-04-07 16:54:35,067 
+线程ID:[9] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：获取全部测试数据失败
+ 
+SwaggerApiDemo.Exceptions.ServiceException: 获取全部测试数据失败
+   在 SwaggerApiDemo.BLL.Impl.SwaggerTestBLLImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\BLL\Impl\SwaggerTestBLLImpl.cs:行号 34
+   在 SwaggerApiDemo.Controllers.SwaggerTestController.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Controllers\SwaggerTestController.cs:行号 41
+
+ 
+记录时间：2017-04-07 17:25:36,158 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：Unable to connect to any of the specified MySQL hosts.
+ 
+MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts.
+   在 MySql.Data.MySqlClient.NativeDriver.Open()
+   在 MySql.Data.MySqlClient.Driver.Open()
+   在 MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   在 MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   在 MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   在 MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   在 MySql.Data.MySqlClient.MySqlConnection.Open()
+   在 CommonLibs.Utilities.SqlHelper.ExecuteReader[T](CommandType cmdType, String cmdText, MySqlParameter[] cmdPrams) 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Helper\SqlHelper.cs:行号 154
+
+ 
+记录时间：2017-04-07 17:25:36,275 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：[ExecuteReader] failure
+ 
+SwaggerApiDemo.Exceptions.HelperException: [ExecuteReader] failure
+   在 CommonLibs.Utilities.SqlHelper.ExecuteReader[T](CommandType cmdType, String cmdText, MySqlParameter[] cmdPrams) 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Helper\SqlHelper.cs:行号 205
+   在 SwaggerApiDemo.Daos.Impl.SwaggerTestDaoImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Daos\Impl\SwaggerTestDaoImpl.cs:行号 24
+
+ 
+记录时间：2017-04-07 17:25:36,303 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：获取全部测试数据失败
+ 
+SwaggerApiDemo.Exceptions.DaoException: 获取全部测试数据失败
+   在 SwaggerApiDemo.Daos.Impl.SwaggerTestDaoImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Daos\Impl\SwaggerTestDaoImpl.cs:行号 29
+   在 SwaggerApiDemo.BLL.Impl.SwaggerTestBLLImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\BLL\Impl\SwaggerTestBLLImpl.cs:行号 29
+
+ 
+记录时间：2017-04-07 17:25:36,332 
+线程ID:[13] 
+日志级别：  ERROR 
+出错类：WebLogger property: [(null)] - 
+错误描述：获取全部测试数据失败
+ 
+SwaggerApiDemo.Exceptions.ServiceException: 获取全部测试数据失败
+   在 SwaggerApiDemo.BLL.Impl.SwaggerTestBLLImpl.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\BLL\Impl\SwaggerTestBLLImpl.cs:行号 34
+   在 SwaggerApiDemo.Controllers.SwaggerTestController.getNetTestAll() 位置 f:\vs013\SwaggerApiDemo\SwaggerApiDemo\Controllers\SwaggerTestController.cs:行号 47

@@ -1,0 +1,44 @@
+﻿1、Log4Net 
+	添加引用 Apache log4net
+	添加配置文件  log4net.config
+	初始加载log4net.config 
+	Global.asax  
+		// 初始化配置文件
+        LogHelper.SetConfig(AppDomain.CurrentDomain.BaseDirectory + "log4net.config");
+
+2、异常捕捉
+	最底层的异常往上抛，到最上面一层捕捉
+
+3、配置文件加密
+	先加密好字符串，然后填入Web.config,再访问数据库之前把链接解密访问
+
+4、事务处理（在BLL层处理）
+	添加引用 System.Transactions
+	using (TransactionScope ts = new TransactionScope())
+    {
+		// 事务提交
+        ts.Complete();
+    }
+
+5、跨域问题   Web.config    cors    已完成  
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+ <system.webServer>
+   <httpProtocol>
+     <customHeaders>
+       <add name="Access-Control-Allow-Origin" value="*" />
+     </customHeaders>
+   </httpProtocol>
+ </system.webServer>
+</configuration>
+
+
+6、配置错误页面   已完成
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<system.web>
+		<customErrors mode="On" defaultRedirect="~/ErrorPages/default.html">
+		  <error statusCode="404" redirect="~/ErrorPages/404.html" />
+		</customErrors>
+	</system.web>
+</configuration> 

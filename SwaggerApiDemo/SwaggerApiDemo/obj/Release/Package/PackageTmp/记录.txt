@@ -1,0 +1,27 @@
+﻿1、Log4Net 日志处理
+2、异常捕捉
+3、配置文件加密
+4、事务处理
+http://www.cnblogs.com/ywtk/p/3936703.html
+
+
+
+5、跨域问题   Web.config    cors
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+ <system.webServer>
+   <httpProtocol>
+     <customHeaders>
+       <add name="Access-Control-Allow-Origin" value="*" />
+     </customHeaders>
+   </httpProtocol>
+ </system.webServer>
+</configuration>
+
+
+6、配置错误页面
+<system.web>
+	<customErrors mode="On" defaultRedirect="~/ErrorPages/default.html">
+      <error statusCode="404" redirect="~/ErrorPages/404.html" />
+    </customErrors>
+</system.web>

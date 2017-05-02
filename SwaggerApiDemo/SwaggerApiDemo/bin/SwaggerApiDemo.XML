@@ -1,0 +1,309 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerApiDemo</name>
+    </assembly>
+    <members>
+        <member name="M:SwaggerApiDemo.Controllers.HomeController.Index">
+            <summary>
+            重定向到webapi页面
+            </summary>
+        </member>
+        <member name="M:SwaggerApiDemo.Controllers.SwaggerTestController.getNetTestAll">
+            <summary>
+            获取所有的net_test
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApiDemo.Controllers.SwaggerTestController.add">
+            <summary>
+            添加测试数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApiDemo.Daos.ISwaggerTestDao.getNetTestAll">
+            <summary>
+            获取所有测试数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:SwaggerApiDemo.Exceptions.DaoException">
+            <summary>
+            Dao 异常
+            </summary>
+        </member>
+        <member name="T:SwaggerApiDemo.Exceptions.HelperException">
+            <summary>
+            Helper 异常
+            </summary>
+        </member>
+        <member name="T:SwaggerApiDemo.Exceptions.ServiceException">
+            <summary>
+            Service 异常
+            </summary>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.RunIUD(System.String)">
+            <summary>
+            通用的执行增删改的方法
+            </summary>
+            <param name="cmdtxt">sql语句</param>
+            <returns>返回一个BOOL值，成功为true，失败为false</returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.GetDataSet(System.String,System.String)">
+            <summary>
+            通用的查询方法（DataSet)
+            </summary>
+            <param name="selectSQL">查询语句</param>
+            <param name="tableName">虚拟表名</param>
+            <returns>返回一个dataset</returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.GetReader(System.String)">
+            <summary>
+            通用查询（datareader）
+            </summary>
+            <param name="cmdtxt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.Istrue(System.String)">
+            <summary>
+            是否有值
+            </summary>
+            <param name="cmdtxt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.IsExist(System.String)">
+            <summary>
+            判断是否执行
+            </summary>
+            <param name="cmdtxt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.GetOneData(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="sql"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.DBHelper.ExecuteNonQuery(System.String,System.Object[])">
+            <summary>
+            执行带参数的增删改SQL语句
+            </summary>
+            <param name="cmdtxt">sql语句</param>
+            <param name="paramsValues">参数数组</param>
+            <returns></returns>
+        </member>
+        <member name="T:Dev_Log4Net.Utilities.LogLevel">
+            <summary>
+            日志记录级别的枚举
+            </summary>
+        </member>
+        <member name="T:Dev_Log4Net.Utilities.LogHelper">
+            <summary>
+            日志帮助类
+            </summary>
+        </member>
+        <member name="F:Dev_Log4Net.Utilities.LogHelper._log">
+            <summary>
+             日志记录器
+            </summary>
+        </member>
+        <member name="F:Dev_Log4Net.Utilities.LogHelper._logger">
+            <summary>
+             日志帮助类实例
+            </summary>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.SetConfig">
+            <summary>
+            初始化配置
+            </summary>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.SetConfig(System.String)">
+            <summary>
+             初始化配置
+            </summary>
+            <param name="configFile"></param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Debug(System.String,System.Exception)">
+            <summary>
+            调试
+            </summary>
+            <param name="msg">信息</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Debug(System.String)">
+            <summary>
+            调试
+            </summary>
+            <param name="msg">信息</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Error(System.String,System.Exception)">
+            <summary>
+            错误
+            </summary>
+            <param name="msg">信息</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Fatal(System.String,System.Exception)">
+            <summary>
+            致命的错误
+            </summary>
+            <param name="msg">信息</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Info(System.String,System.Exception)">
+            <summary>
+            信息
+            </summary>
+            <param name="msg">信息</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Info(System.String)">
+            <summary>
+            信息
+            </summary>
+            <param name="msg">信息</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Warn(System.String,System.Exception)">
+            <summary>
+            警告
+            </summary>
+            <param name="msg">信息</param>
+            <param name="ex">异常</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.Warn(System.String)">
+            <summary>
+            警告
+            </summary>
+            <param name="msg">信息</param>
+        </member>
+        <member name="M:Dev_Log4Net.Utilities.LogHelper.CurrentLogLevel">
+            <summary>
+            日志级别
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Dev_Log4Net.Utilities.LogHelper.CurrentLogger">
+            <summary>
+            静态实例
+            </summary>
+        </member>
+        <member name="T:CommonLibs.Utilities.SqlHelper">
+            <summary>
+            辅助类
+            </summary>
+        </member>
+        <member name="F:CommonLibs.Utilities.SqlHelper.ConnString">
+            <summary>
+            连接字符串
+            Server=121.42.33.174;Port=3306;Database=bysj_king_music;Uid=root;Pwd=kangxu;Max Pool Size=512;
+            </summary>
+        </member>
+        <member name="M:CommonLibs.Utilities.SqlHelper.ExecuteNonQuery(System.Data.CommandType,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行insert、update和delete等sql语句的ADO.NET操作
+            </summary>
+            <param name="cmdType">命令的类型</param>
+            <param name="cmdText">执行的SQL脚本或存储过程的名称</param>
+            <param name="cmdPrams">执行的SQL脚本的参数列表，没有则为NULL</param>
+            <returns>返回的成功与否</returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.SqlHelper.ExecuteScalar(System.Data.CommandType,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行包含count(*) \ max(..) 等 select 语句
+            </summary>
+            <param name="cmdType">命令的类型</param>
+            <param name="cmdText">执行的SQL脚本或存储过程的名称</param>
+            <param name="cmdPrams">执行的SQL脚本的参数列表，没有则为NULL</param>
+            <returns>返回的是第一行第一列的值</returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.SqlHelper.ExecuteReader``1(System.Data.CommandType,System.String,MySql.Data.MySqlClient.MySqlParameter[])">
+            <summary>
+            执行select 语句
+            </summary>
+            <param name="cmdType">命令的类型</param>
+            <param name="cmdText">执行的SQL脚本或存储过程的名称</param>
+            <param name="cmdPrams">执行的SQL脚本的参数列表，没有则为NULL</param>
+            <returns>返回的数据集合</returns>
+        </member>
+        <member name="M:CommonLibs.Utilities.SqlHelper.ExecutePager``1(System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            执行分页存储过程pagequery
+            </summary>
+            <typeparam name="T">泛型实体</typeparam>
+            <param name="sqlTable">表名</param>
+            <param name="sqlColumns">表列</param>
+            <param name="sqlWhere">表条件</param>
+            <param name="sqlSort">表排序</param>
+            <param name="pageIndex">查询的页索引（从0开始）</param>
+            <param name="pageSize">每页显示的数量</param>
+            <returns>分页对象</returns>
+        </member>
+        <member name="T:CommonLibs.Utilities.Pager`1">
+            <summary>
+            分页实体类
+            </summary>
+            <typeparam name="T">泛型实体</typeparam>
+        </member>
+        <member name="F:CommonLibs.Utilities.Pager`1.rows">
+            <summary>
+            当前索引页的数据集合
+            </summary>
+        </member>
+        <member name="F:CommonLibs.Utilities.Pager`1.total">
+            <summary>
+            总的数据数量
+            </summary>
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesEncrypt(System.String)">
+            <summary>
+            使用默认加密
+            </summary>
+            <param name="strText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesDecrypt(System.String)">
+            <summary>
+            使用默认解密
+            </summary>
+            <param name="strText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesEncrypt(System.String,System.String)">
+            <summary> 
+            Encrypt the string 
+            Attention:key must be 8 bits 
+            </summary> 
+            <param name="strText">string</param> 
+            <param name="strEncrKey">key</param> 
+            <returns></returns> 
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesDecrypt(System.String,System.String)">
+            <summary> 
+            Decrypt string 
+            Attention:key must be 8 bits 
+            </summary> 
+            <param name="strText">Decrypt string</param> 
+            <param name="sDecrKey">key</param> 
+            <returns>output string</returns> 
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesEncrypt(System.String,System.String,System.String)">
+            <summary> 
+            Encrypt files 
+            Attention:key must be 8 bits 
+            </summary> 
+            <param name="m_InFilePath">Encrypt file path</param> 
+            <param name="m_OutFilePath">output file</param> 
+            <param name="strEncrKey">key</param> 
+        </member>
+        <member name="M:SwaggerApiDemo.Utils.DESUtil.DesDecrypt(System.String,System.String,System.String)">
+            <summary> 
+            Decrypt files 
+            Attention:key must be 8 bits 
+            </summary> 
+            <param name="m_InFilePath">Decrypt filepath</param> 
+            <param name="m_OutFilePath">output filepath</param> 
+            <param name="sDecrKey">key</param> 
+        </member>
+    </members>
+</doc>
